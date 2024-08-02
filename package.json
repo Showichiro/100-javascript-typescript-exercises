@@ -21,7 +21,8 @@
     "npm": "10.8.2"
   },
   "workspaces": [
-    "exercises/01.var-let-const"
+    "exercises/01.var-let-const",
+    "exercises/02.function"
   ],
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
