@@ -14,4 +14,4 @@ for (var i = 0; i < maxCount; i++) {
   console.log(message);
 }
 
-console.log("Final count: " + count);
+console.log(`Final count: ${count}`);
