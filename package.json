@@ -1,0 +1,30 @@
+{
+  "name": "100-javascript-typescript-exercises",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Showichiro/100-javascript-typescript-exercises.git"
+  },
+  "author": "uchihori",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Showichiro/100-javascript-typescript-exercises/issues"
+  },
+  "homepage": "https://github.com/Showichiro/100-javascript-typescript-exercises#readme",
+  "description": "",
+  "volta": {
+    "node": "20.16.0",
+    "npm": "10.8.2"
+  },
+  "workspaces": [
+    "exercises/01.var-let-const"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "vitest": "^2.0.5"
+  }
+}
