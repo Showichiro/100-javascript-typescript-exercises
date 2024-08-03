@@ -5,12 +5,26 @@
 // 4. reset関数を追加し、カウントを初期値に戻せるようにする.初期値は1.の改修の通り引数の値とする.
 // 5. value関数を追加し、現在のカウントを参照できるようにする.
 // 6. increment/decrement/reset/valueを持つオブジェクトをcreateCounterの戻り値にする.
-export const createCounter = () => {
-  let count = 0;
+export const createCounter = (initialValue = 1) => {
+    let count = initialValue;
 
-  const increment = () => {
-    count++;
-    return count;
-  };
-  return increment;
+    const increment = (value = 1) => {
+        count += value;
+        return count;
+    };
+
+    const decrement = (value = 1) => {
+        count -= value;
+        return count;
+    };
+
+    const value = () => {
+        return count;
+    };
+
+    const reset = () => {
+        count = initialValue;
+    };
+
+    return { increment, decrement, value, reset };
 };
