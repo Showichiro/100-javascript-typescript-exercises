@@ -33,10 +33,10 @@
     "exercises/08.array-instance-method",
     "exercises/09.try-catch",
     "exercises/10.promise",
-    "exercises/10.async-await",
-    "exercises/11.promise-static-method",
-    "exercises/12.web-api",
-    "exercises/13.set-map"
+    "exercises/11.async-await",
+    "exercises/12.promise-static-method",
+    "exercises/13.web-api",
+    "exercises/14.set-map"
   ],
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
