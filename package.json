@@ -3,7 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "format": "biome format --write",
+    "lint": "biome lint --write"
   },
   "repository": {
     "type": "git",
@@ -24,7 +26,8 @@
     "exercises/01.var-let-const",
     "exercises/02.function",
     "exercises/03.object",
-    "exercises/04.array"
+    "exercises/04.array",
+    "exercises/05.closures"
   ],
   "devDependencies": {
     "@biomejs/biome": "1.8.3",

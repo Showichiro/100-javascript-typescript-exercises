@@ -25,5 +25,5 @@ export const editFruit = () => {};
 
 // 以下は編集しない
 export const resetFruit = () => {
-    fruits = ["apple", "banana"];
+  fruits = ["apple", "banana"];
 };

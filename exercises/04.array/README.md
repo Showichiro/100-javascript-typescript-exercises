@@ -104,5 +104,5 @@ console.log(newArray); // [2, 4, 6]
 実装が出来たら以下のコマンドを実行しテストがすべて通ることを確認してください。
 
 ```sh
-npm test 04.array/index.test.js
+npm test 04.array
 ```
