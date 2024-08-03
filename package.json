@@ -23,7 +23,8 @@
   "workspaces": [
     "exercises/01.var-let-const",
     "exercises/02.function",
-    "exercises/03.object"
+    "exercises/03.object",
+    "exercises/04.array"
   ],
   "devDependencies": {
     "@biomejs/biome": "1.8.3",

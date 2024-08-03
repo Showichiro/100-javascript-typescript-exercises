@@ -58,7 +58,46 @@ function double(num) {
 console.log(applyTwice(double, 5)); // 20
 ```
 
-#### 4. 練習問題
+### 4. アロー関数
+
+アロー関数は、JavaScriptにおける関数定義の短縮形です。アロー関数は`function`キーワードを使用せずに、よりシンプルに関数を定義することができます。ただし、アロー関数は`this`の取り扱いが通常の関数とは異なります。
+
+アロー関数の基本的な構文は以下の通りです：
+
+```js
+const functionName = (parameters) => {
+    // 処理を行うコード
+    return result;
+}
+```
+
+簡単な例を見てみましょう。
+
+#### 値を返すアロー関数
+
+aとbを加算した結果を返すアロー関数の例です：
+
+```js
+const add = (a, b) => a + b;
+
+console.log(add(2, 3)); // 5
+```
+
+#### 値を返さないアロー関数
+
+標準出力にメッセージを出力するアロー関数の例です：
+
+```js
+const logMessage = message => {
+    console.log(message);
+};
+
+logMessage('Hello, Arrow Functions!'); // "Hello, Arrow Functions!"
+```
+
+アロー関数は簡潔で読みやすいため、特にコールバック関数を使用する場合によく利用されます。
+
+## 3. 練習問題
 
 関数に関する練習問題は、 `index.js` ファイルをご覧ください。
 実装が出来たら以下のコマンドを実行しテストがすべて通ることを確認してください。
