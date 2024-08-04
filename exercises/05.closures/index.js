@@ -6,25 +6,25 @@
 // 5. value関数を追加し、現在のカウントを参照できるようにする.
 // 6. increment/decrement/reset/valueを持つオブジェクトをcreateCounterの戻り値にする.
 export const createCounter = (initialValue = 1) => {
-    let count = initialValue;
+  let count = initialValue;
 
-    const increment = (value = 1) => {
-        count += value;
-        return count;
-    };
+  const increment = (value = 1) => {
+    count += value;
+    return count;
+  };
 
-    const decrement = (value = 1) => {
-        count -= value;
-        return count;
-    };
+  const decrement = (value = 1) => {
+    count -= value;
+    return count;
+  };
 
-    const value = () => {
-        return count;
-    };
+  const value = () => {
+    return count;
+  };
 
-    const reset = () => {
-        count = initialValue;
-    };
+  const reset = () => {
+    count = initialValue;
+  };
 
-    return { increment, decrement, value, reset };
+  return { increment, decrement, value, reset };
 };
