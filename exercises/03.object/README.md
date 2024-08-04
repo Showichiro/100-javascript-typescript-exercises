@@ -43,3 +43,13 @@ let person = {
 
 person.greet(); // "Hello, my name is John"
 ```
+
+## 4.オブジェクトのプロパティの操作
+
+オブジェクトのプロパティに対しては`.`でアクセスし再代入することができます。
+
+```js
+let car = { color: "red", model: "Toyota" };
+car.color = "blue";
+console.log(car.color); // "blue"
+```
