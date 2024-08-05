@@ -15,29 +15,29 @@ const content = (title) => `
 `;
 
 const args = parseArgs({
-    allowPositionals: true,
+  allowPositionals: true,
 });
 
 const dirName = args.positionals[0];
 const title = args.positionals[1];
 
 if (!dirName || !title) {
-    console.error("Error: Directory name and title must be provided.");
-    process.exit(1);
+  console.error("Error: Directory name and title must be provided.");
+  process.exit(1);
 }
 
 const exercisesDir = path.join(__dirname, "..", "exercises");
 
 // ディレクトリが存在しない場合は作成
 if (!fs.existsSync(exercisesDir)) {
-    fs.mkdirSync(exercisesDir, { recursive: true });
+  fs.mkdirSync(exercisesDir, { recursive: true });
 }
 
 const newDirPath = path.join(exercisesDir, dirName);
 
 // ディレクトリが存在しない場合は作成
 if (!fs.existsSync(newDirPath)) {
-    fs.mkdirSync(newDirPath);
+  fs.mkdirSync(newDirPath);
 }
 
 const readmePath = path.join(newDirPath, "README.md");
