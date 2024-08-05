@@ -22,22 +22,6 @@
     "node": "20.16.0",
     "npm": "10.8.2"
   },
-  "workspaces": [
-    "exercises/01.var-let-const",
-    "exercises/02.function",
-    "exercises/03.object",
-    "exercises/04.array",
-    "exercises/05.closures",
-    "exercises/06.class",
-    "exercises/07.spread-syntax",
-    "exercises/08.array-instance-method",
-    "exercises/09.try-catch",
-    "exercises/10.promise",
-    "exercises/11.async-await",
-    "exercises/12.promise-static-method",
-    "exercises/13.web-api",
-    "exercises/14.set-map"
-  ],
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
     "vitest": "^2.0.5"
