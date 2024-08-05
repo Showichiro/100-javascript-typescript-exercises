@@ -6,15 +6,23 @@ import { fileURLToPath } from "node:url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const content = (title) => `
+# ${title}
+
+## 説明
+
+## 練習問題
+`;
+
 const args = parseArgs({
     allowPositionals: true,
 });
 
 const dirName = args.positionals[0];
-const content = args.positionals[1];
+const title = args.positionals[1];
 
-if (!dirName || !content) {
-    console.error("Error: Directory name and content must be provided.");
+if (!dirName || !title) {
+    console.error("Error: Directory name and title must be provided.");
     process.exit(1);
 }
 
@@ -35,4 +43,4 @@ if (!fs.existsSync(newDirPath)) {
 const readmePath = path.join(newDirPath, "README.md");
 
 // README.mdファイルを書き込む
-fs.writeFileSync(readmePath, `# ${content}`);
+fs.writeFileSync(readmePath, `# ${content(title)}`);
