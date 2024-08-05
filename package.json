@@ -2,10 +2,12 @@
   "name": "100-javascript-typescript-exercises",
   "private": true,
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "test": "vitest",
     "format": "biome format --write",
-    "lint": "biome lint --write"
+    "lint": "biome lint --write",
+    "add:exercise": "node scripts/makeExercise"
   },
   "repository": {
     "type": "git",
