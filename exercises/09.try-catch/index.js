@@ -1,6 +1,8 @@
 // 問題1: エラーを投げる処理にtry/catch句を設定し、エラーを握りつぶす。
 export const wrapFn = () => {
-  throwError();
+  try {
+    throwError();
+  } catch (e) {}
 };
 
 const throwError = () => {
@@ -13,7 +15,17 @@ const throwError = () => {
 // エラーがない場合は以下のオブジェクトを返却する.
 // { valid: true }
 export const validateUserResult = (user) => {
-  validateUser(user);
+  try {
+    validateUser(user);
+    return { valid: true };
+  } catch (e) {
+    if (e instanceof AgeError) {
+      return { valid: false, type: "age", message: e.message };
+    }
+    if (e instanceof NameError) {
+      return { valid: false, type: "name", message: e.message };
+    }
+  }
 };
 
 class AgeError extends Error {
